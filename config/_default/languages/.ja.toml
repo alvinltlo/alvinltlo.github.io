@@ -1,0 +1,156 @@
+disabled = false
+languageCode = 'ja-JP'
+languageName = '日本語'
+title = 'Magnolia' # This will go in the Header as well
+copyright = """[Hugo](https://gohugo.io/)で[Ludovico Caluori](https://github.com/ololiuhqui)によってデザインされました 🎨 \n
+ [MIT license](https://github.com/ololiuhqui/magnolia-free-hugo-theme/blob/main/LICENSE.md)の下でライセンスされています 📄""" # Please leave this here to give me and the tools i used some credit for the work, or BuyMeACoffee and change or remove the copyrightlink below :)
+contentDir = "content/ja"
+
+
+# Change single params to "false" to remove from rendering
+[params]
+  subtitle = "無料Hugoテーマ" # This goes in the header and in the site title
+  # PAGES
+  [params.homepage]
+    # Notice that SEO meta tags (what appears in google search results) can be set
+    # in individual pages frontmatters `/content/<page>`
+    ###
+    preTitle = '無料Hugoテーマ'
+    title = "Magnolia"
+    # You can use some markdown safely here as long as you don't include line breaks
+    intro= """
+### "自由は私たちをより良い人間にし、集団としての私たちの地位をより速く向上させます。"
+___
+
+**専門家や小企業向けに考えられた、シンプルで完全にカスタマイズ可能な多言語Hugoテーマ。**
+
+このテーマはシンプルさを念頭に構築されており、小さく、簡単に**カスタマイズ可能、レスポンシブ、モジュラー、多言語**です。また、**Bootstrap**と**SCSS**を使用しているため、さらに詳細なカスタマイズの余地も残しています。
+
+詳細については[テーマのGitHubページ](https://github.com/ololiuhqui/magnolia-free-hugo-theme)を参照してください。リポジトリにスターを付けることを忘れずに！
+
+機能ページでこのテーマができることを確認し、下の美しい連絡先ページの例をご覧ください。
+        """
+    mainButton = "機能"
+    mainButtonRef = "features" # Just write the name or slug of the page here
+    secondButton = "お問い合わせ"
+    secondButtonRef = "contacts" # Just write the name or slug of the page here
+  # For the blog feed section (visible only if posts are rendered)
+    blogTitle = "興味深いストーリー"
+    blogButton= "さらに多くのストーリー"
+
+[params.office]
+  title = "オフィス"
+ description = "このページは、Googleマップのリンクを追加して、あなたの活動場所への道順を簡単にカスタマイズできます。"
+ buttonText = "道順を取得"
+ buttonLink = "https://maps.app.goo.gl/LzsPzRkTYSZ8SF3y8" # google maps "share" link here (for button)
+ mapLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d382266.44569392945!2d-76.55832397784323!3d41.53770983690751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4d93a77484bbb%3A0xfff27920ab9bfae8!2sScranton%2C%20Pennsylvania%2C%20Stati%20Uniti!5e0!3m2!1sit!2sit!4v1716459350324!5m2!1sit!2sit" # google maps "embed" link here
+
+[params.contacts]
+  title = "お問い合わせください！"
+  formCallToAction = "これは「お問い合わせ」の例ページです。FormSpreeでフォームの回答を受け取ることができます。"
+  socialCallToAction = "下に独自のソーシャルメディアリンクを追加できます！" # These are the same as in [params.social]
+  [params.contacts.form]
+    formspreeLink = "https://yourformspreelink.com" #subscribe to formspree and add the link for the form here
+    firstname = "名*"
+    lastname = "姓*"
+    email = "メールアドレス*"
+    phone = "電話番号*"
+    Inquiry = "お問い合わせ内容*"
+    checkbox = "法律に従ってデータが処理されることに同意します*"
+    submitBtn = "送信"
+[params.services]
+  title = "機能"
+  description = """ このテーマはシンプルさを念頭に構築されており、小さく、簡単にカスタマイズ可能、レスポンシブ、モジュラー、多言語です。また、BootstrapとSCSSを使用しているため、さらに詳細なカスタマイズの余地も残しています。
+  このページは、サイトのページ名を変更する方法の例も示しています。サイトはこのページに`services.html`レイアウトを使用しますが、ページは「機能」と呼ばれ、リンクは関連するパーマリンク`/features`を使用します。"""
+  [params.services.list]
+    # You can add as much params.services.list.<N> as you like
+    [params.services.list.0]
+      title= "レスポンシブ"
+      description= "テーマは完全にレスポンシブで、すべての画面サイズで完璧に表示されます。"
+    [params.services.list.01]
+      title = "モジュラー"
+      description= "設定ファイルから簡単に一部の要素を非表示または表示できます。"
+    [params.services.list.02]
+      title = "多言語"
+      description= "デフォルトのコンテンツ言語は英語です（変更可能）が、テーマにはイタリア語の例と、言語間を簡単に切り替えるためのドロップダウンメニューが含まれており、必要な数の言語を簡単に追加できます。パーマリンクは各言語でローカライズできます（例：英語で`/contacts`、イタリア語で`/contatti`）。"
+    [params.services.list.03]
+      title = "カスタマイズ可能"
+      description= "ページコンテンツは設定ファイル内からカスタマイズできます。"
+    [params.services.list.04]
+      title = "SEO対応"
+      description= "/contentのすべてのページには、簡単にカスタマイズ可能なメタ説明と、より良いインデックス作成のためのユニークなメタタイトルがあります。テーマはGoogle、Meta、Xのメタ画像として`static/img/meta-image`画像を使用します。"
+    [params.services.list.05]
+      title = "Google Analytics対応"
+      description= "`config.toml`ファイルにGoogle Analyticsタグを挿入して、サイトのパフォーマンスを簡単に追跡できるようにします。"
+    [params.services.list.06]
+      title = "Googleマップ付き"
+      description= "連絡先ページは、Googleマップのリンクを追加して、あなたの活動場所への道順を簡単にカスタマイズできます。"
+
+[params.socials]
+  enabled = true # enables/disables the whole social section in the footer
+  callToAction= "ソーシャルネットワークで私たちとつながりましょう >"
+      [[params.socials.link]]
+        name = "github"
+        link = "https://github.com/ololiuhqui/magnolia-free-hugo-theme"
+      [[params.socials.link]]
+        name = "linkedin"
+        link = ""
+      [[params.socials.link]]
+        name = "whatsapp"
+        link = ""
+      # You can add other socials here by copypasting the above section and
+      # selecting the right name for the icon from here https://icons.getbootstrap.com/
+
+[params.schedules] # Time schedules (eg. your office openming hours)
+  enabledFooter = false # This will add the schedules on the footer too
+  enabledContacts = true # This will add the schedule to the contact page
+  title = "営業時間" # For contacts page only
+  [params.schedules.days]
+  # Use something like "Monday: 9-13" for each day
+  # if left empty it is disabled (default)
+    day1 = "月曜日: 9:00 – 19:00"
+    day2 = "火曜日: 9:00 – 19:00"
+    day3 = "水曜日: 9:00 – 19:00"
+    day4 = "木曜日: 9:00 – 19:00"
+    day5 = "金曜日: 9:00 – 19:00"
+    day6 = ""
+    day7 = ""
+
+[params.footer]
+  extraDescription1 = "スクラントン市から"
+  extraDescription2 = "VAT No. 0000000000"
+  [params.footer.navigate]
+  heading = "ナビゲーション"
+  [params.footer.contacts]
+  enabled = true # enables/disables the whole contacts section in footer
+  heading = "連絡先"
+  address = "スクラントン 2865 Pouros Corners 55441-0788"
+  mail = "dundermifflin@fakemail.com"
+  mail2 = "dundermifflinorders@fakemail.com"
+  phone = "+00 0000000"
+
+[params.notfound]
+  title = "404、ページが見つかりません" # text for 404 page
+
+[params.single] # for posts pages (visible only if posts are rendered)
+  similarContent= "関連コンテンツ"
+  toc= "目次"
+
+[menus]
+# PageRef should refer to the "translationKey" in `/content/<page>` frontmatter, names can be changed freely
+  [[menus.main]]
+  name = "ホーム"
+  pageRef = "/"
+  weight = 1
+  [[menus.main]]
+  name = "機能"
+  pageRef = "pages/services"
+  weight = 2
+  [[menus.main]]
+  name = "オフィス"
+  pageRef = "pages/office"
+  weight = 3
+  [[menus.main]]
+  name = "お問い合わせ"
+  pageRef = "pages/contacts"
+  weight = 4 
